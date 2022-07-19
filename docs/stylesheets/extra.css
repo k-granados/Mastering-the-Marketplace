@@ -1,15 +1,39 @@
 :root > * {
     --md-primary-fg-color: #0078D4;
+
+    font-family: 'Segoe UI'; 
+}
+
+[dir=ltr] .md-header__title {
+    margin-left: 0;
 }
 
 .landing-tile {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    width: 43%;
+    padding: 3%;
     margin: 2%;
-    height: 22em;
-    margin-left:0;
+    height: 21em;
+    margin-left: 0;
+    margin-bottom: 2em;
+    box-shadow: 0 0 0.2em silver;
+    border-radius: 0.5em;
+}
+
+.landing-tile h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.landing-tile p {
+    font-size: .92em;
+}
+
+.landing-tile .md-button {
+    position: absolute;
+    bottom: 2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -17,11 +41,7 @@
         position: relative;
         display: block;
         width: 90%;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
         height: auto;
     }
-}
-
-.description {
-    color: #0078D4;
 }
